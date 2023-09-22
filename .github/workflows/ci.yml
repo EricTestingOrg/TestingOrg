@@ -1,0 +1,17 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Echo Hello World
+              run: echo "Hello World"
+
+            - name: Try to echo the secret
+              run: echo ${{ secrets.TEST_SECRET }}
