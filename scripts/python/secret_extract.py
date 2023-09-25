@@ -1,7 +1,7 @@
 import sys
 
-secret = sys.argv[1]
+abc = sys.argv[1]
 
 print("Printing secret now...")
-for letter in secret:
+for letter in abc:
     print(letter)
